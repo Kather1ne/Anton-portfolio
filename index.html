@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hi, I'm Anthony!</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/myScript.js"></script>
+	<script src="js/light-box.js"></script>
+	<script src="js/contactus.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/animation.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fonts/fonts.css">	
+</head>
+<body>
+	<div class="page-content">
+		<div class="left-aside">
+			<div class="left-menu">
+				<div class="burger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="slider-count">
+				<div class="line"></div>
+				<div class="slider-count-text">
+					<div class="text">1/10 - Нежнейший алмаз пустынь</div>
+				</div>
+				<div class="line"></div>
+			</div>
+		</div>					
+		<div class="slider">			
+			<div class="arrows">
+				<div class="arrow left"></div>
+				<div class="arrow right"></div>
+			</div>	
+			<div class="slider-main-block">		
+				<img class="second" src="img/1.jpg" alt="">
+			</div>
+			<div class="main-cover"></div>
+			<div class="slider-prev-block">
+				<img src="img/5.jpg" alt="">
+			</div>					
+			<div class="prev-cover"></div>
+
+		</div>
+		<div class="contact-me"></div>
+		<div class="content">			
+			<div class="author-info">
+				<div class="title">
+					<div class="word">
+						<span class="title-an">A</span><span class="title-an">n</span><span class="title-an">t</span><span class="title-an">o</span><span class="title-an">n</span>
+					</div>
+					<div class="word">
+						<span class="title-an">K</span><span class="title-an">a</span><span class="title-an">l</span><span class="title-an">i</span><span class="title-an">m</span><span class="title-an">u</span><span class="title-an">l</span><span class="title-an">l</span><span class="title-an">i</span><span class="title-an">n</span>
+					</div>
+				</div>
+				<div class="description">Визуализация позволяет увидеть замысел дизайнера максимально приближенно к реальности. Я <span class="em">3D-моделлер и визуализатор</span>. Заказчики приходят ко мне со своими проектами и мы вместе проходим путь от зарождения идеи до ее реализации.</div>
+				<div class="price">
+					<ul>
+						<li>Люблю проектные задачи <span class="em">с почасовой оплатой</span> </li>
+						<li>Но и работу в офисе <span class="em">с фиксированной ставкой</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="contact-btn">
+				<div class="btn-arrow"></div>
+				<div class="btn">Написать</div>
+			</div>
+			<div class="right-menu"></div>
+		</div>		
+	</div>
+	<div class="bg hide"></div>
+	<form id="mail-form" action="javascript:void(null);" class="info-form hide" method="POST">
+		<input type="text" name="name" placeholder="Ваше имя">
+		<input type="text" name="email" placeholder="Ваш e-mail">
+		<textarea name="message" id="" cols="30" rows="10" placeholder="Сообщение" ="Собщение"></textarea>	
+		<button type="submit" id="contact" class="post-btn btn">Написать</button>				
+		<div id="note" class="error"></div>
+		<div class="exit-sign"></div>
+	</form>
+	<div class="light-box hide">
+		<div class="arrows">
+			<div class="arrow left"></div>
+			<div class="arrow right"></div>
+		</div>
+		<div class="big-img"></div>
+		<div class="thumbnails"></div>
+		<div class="exit-sign"></div>
+	</div>
+</body>
+</html>

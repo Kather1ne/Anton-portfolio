@@ -1,0 +1,40 @@
+
+@keyframes main-img {
+	from { transform: scale(1.2);
+		}
+	to { transform: scale(1); 
+		max-height: 120%;
+		min-width: 100%;
+		 }
+}
+
+
+/*
+@keyframes main-img-frame {
+	from { height: 0px; }
+	to { height: calc(100% - 60px); }
+}*/
+@keyframes main-img-frame {
+	from { height: calc(100%); }
+	to { height: 0px; }
+}
+
+@keyframes main-img-frame-sm {
+	from { height: 0px; }
+	to { height: calc(100% - 30px); }
+}
+
+@keyframes letters {
+	from { transform: translateY(100%); }
+	to { transform: translateY(0%); }
+}
+
+@keyframes translate-obj {
+	from { transform: translateY(30px); }
+	to { transform: translateY(0px); }
+}
+
+@keyframes opacity-obj {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}	
