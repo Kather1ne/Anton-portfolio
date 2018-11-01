@@ -7,31 +7,13 @@ $(function() {
 		var imgName = $(this).find('img').attr('src').match(/\d+/)[0];
 		var i = 0;
 		var namesArr = [];
-<<<<<<< HEAD
-		var mainImgContent = '<img src="img/' + imgName + '-1.jpg">';	
+ 
+
+		console.log(arr);
+		var mainImgContent = '<img src="img/' + arr[0] + '">';	
 		$('.big-img').html(mainImgContent);
 		$('.bg, .light-box').removeClass('hide');
-=======
-		$(".thumbnails").load("img/ a[href$='.jpg']", function() {
-			
-			$('.thumbnails').find("a:contains(" + imgName + "-)").each(function () {
-				var filename = this.href.replace(window.location.host, "").replace("http:///", "");
-				namesArr[i] = filename;
-				i++;
-			});
-			arr = namesArr;
-			console.log(arr[0]);
-			var mainImgContent = '<img src="img/' + arr[0] + '">';	
-			$('.big-img').html(mainImgContent);
-			$('.bg, .light-box').removeClass('hide');
-		});
-			 
 
-		// console.log(arr);
-		// var mainImgContent = '<img src="img/' + arr[0] + '">';	
-		// $('.big-img').html(mainImgContent);
-		// $('.bg, .light-box').removeClass('hide');
->>>>>>> 0d25c25870dbf06d6f616485785d43a47729b342
 	});
 
 	$('.light-box .arrow.right').on('click', function() {
