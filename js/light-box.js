@@ -3,17 +3,14 @@ $(function() {
 	var arr = { '1':3, '2':3, '3':2};
 
 
+	
 	$('.slider-main-block').on('click', function(){
 		var imgName = $(this).find('img').attr('src').match(/\d+/)[0];
 		var i = 0;
 		var namesArr = [];
- 
-
-		console.log(arr);
-		var mainImgContent = '<img src="img/' + arr[0] + '">';	
+		var mainImgContent = '<img src="img/' + imgName + '-1.jpg">';	
 		$('.big-img').html(mainImgContent);
 		$('.bg, .light-box').removeClass('hide');
-
 	});
 
 	$('.light-box .arrow.right').on('click', function() {
