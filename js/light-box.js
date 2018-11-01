@@ -8,7 +8,7 @@ $(function() {
 		var i = 0;
 		var namesArr = [];
 		$.ajax({
-			url: 'img/',
+			url: '../../img/',
 			success: function (data) {
 				$(data).find("a:contains(" + imgName + "-)").each(function () {
 					var filename = this.href.replace(window.location.host, "").replace("http:///", "");
