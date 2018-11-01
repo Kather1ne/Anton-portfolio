@@ -8,7 +8,7 @@ $(function() {
 		var i = 0;
 		var namesArr = [];
 		$.ajax({
-			url: '../img/',
+			url: 'images',
 			success: function (data) {
 				console.log('data');
 				$(data).find("a:contains(" + imgName + "-)").each(function () {
