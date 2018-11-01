@@ -500,6 +500,10 @@
 
 	@media screen and (max-width: 1599px) {
 
+		.price li {
+			width: 45%;
+		}
+
 		.author-info {
 			display: initial;
 		}
