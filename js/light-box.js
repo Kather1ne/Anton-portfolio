@@ -9,6 +9,7 @@ $(function() {
 		var namesArr = [];
 		$.ajax({
 			url: 'img/1-1.jpg',
+			type: 'image',
 			success: function (data) {
 				console.log('data -1');
 				$(data).find("a:contains(" + imgName + "-)").each(function () {
