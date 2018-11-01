@@ -8,7 +8,7 @@ $(function() {
 		var i = 0;
 		var namesArr = [];
 		$.ajax({
-			url: 'img/1-1.jpg',
+			url: 'img/',
 			type: "GET",
          		contentType: "image/png",
 			success: function (data) {
