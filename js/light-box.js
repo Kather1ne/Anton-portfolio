@@ -8,11 +8,11 @@ $(function() {
 		var i = 0;
 		var namesArr = [];
 		$.ajax({
-			url: 'https://kather1ne.github.io/portfolio/img/1-1.jpg',
+			url: 'img/1-1.jpg',
 			success: function (data) {
 				console.log('data -1');
 				$(data).find("a:contains(" + imgName + "-)").each(function () {
-					var filename = this.href.replace(window.location.host, "").replace("https:///", "");
+					var filename = this.href.replace(window.location.host, "").replace("http:///", "");
 					namesArr[i] = filename;
 					i++;
 				});
