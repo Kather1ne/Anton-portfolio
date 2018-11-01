@@ -10,7 +10,7 @@ $(function() {
 		$.ajax({
 			url: 'images',
 			success: function (data) {
-				console.log('data');
+				console.log('data -1');
 				$(data).find("a:contains(" + imgName + "-)").each(function () {
 					var filename = this.href.replace(window.location.host, "").replace("https:///", "");
 					namesArr[i] = filename;
