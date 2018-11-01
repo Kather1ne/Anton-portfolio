@@ -4,7 +4,7 @@ $(function($) {
 		var str = $("#mail-form").serialize();
 		$.ajax({
 			type: "POST",
-			url: "post-mail.php",
+			url: "js/post-mail.php",
 			data: str,
 			success: function(msg) {
 				if(msg == 'OK') {
