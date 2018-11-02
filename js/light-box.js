@@ -26,13 +26,14 @@ $(function() {
 	}); 
 
 	$('.light-box .arrow.left').on('click', function() {
+		var imgNameFirst = Number($('.light-box img').attr('src').match(/\d/)[0]);		
 		var imgName = Number($('.light-box img').attr('src').match(/-\d+/)[0].replace("-",""));
 		var imgNumber = imgName - 1;
 		if (imgNumber < 1) { 
-			$('.light-box img').attr('src', 'img/' + arr[arr.length - 1]);
+			$('.light-box img').attr('src', 'img/' + imgNameFirst + '-' + arr[imgName] + '.jpg');
 		}
 		else {
-			$('.light-box img').attr('src', 'img/' + arr[imgNumber - 1]);
+			$('.light-box img').attr('src', 'img/' + imgNameFirst + '-' + imgNumber + '.jpg');
 		}
 	}); 
 
