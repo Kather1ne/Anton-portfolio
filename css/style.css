@@ -111,7 +111,8 @@
 
 .slider-main-block img,
 .slider-prev-block img {
-	max-height: 120%;
+	height: 100%;
+	object-fit: cover;
 	min-width: 100%;
 	cursor: pointer;
 	transition: opacity 1s, transform 1s;
